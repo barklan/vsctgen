@@ -72,10 +72,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// flag.StringVar(&runshFilepath, "r", "", "absolute path to run.sh")
-	// flag.StringVar(&tasksFilepath, "t", "", "absolute path to tasks.json")
-	// flag.Parse()
-
 	runshFilepath = filepath.Join(path, "run.sh")
 	tasksFilepath = filepath.Join(path, ".vscode", "tasks.json")
 	if runshFilepath == "" || tasksFilepath == "" {
